@@ -12,7 +12,11 @@ const App = () => {
     }
     setSide(!side);
   };
-  return <Dashboard />;
+  return (
+    <div className="bg-gray-100">
+      <Dashboard />
+    </div>
+  );
 };
 
 export default App;

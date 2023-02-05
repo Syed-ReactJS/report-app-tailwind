@@ -1,11 +1,11 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ data }) => {
   return (
-    <div className="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white w-64">
+    <div className="h-full md:py-8 md:px-6 space-y-6 rounded-xl border border-gray-200 bg-white w-fu md:w-64 ">
       <div className="my-8 text-center">
-        <h1 className="text-5xl font-bold text-gray-800">64,5%</h1>
-        <span className="text-gray-500">Compared to last week $13,988</span>
+        <h1 className="text-5xl font-bold text-gray-800">4</h1>
+        <span className="text-gray-500">{data?.title}</span>
       </div>
 
       <table className="w-full text-gray-600">

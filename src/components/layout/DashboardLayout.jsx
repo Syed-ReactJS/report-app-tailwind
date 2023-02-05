@@ -15,8 +15,8 @@ const DashboardLayout = ({ children }) => {
   return (
     <div className="flex">
       <SideBard />
-      <div className="bg-gray-100 grow h-screen">
-        <header className="flex items-center ml-6 mt-2 ">
+      <div className="grow ml-6 mt-2 mb-6">
+        <header className="flex items-center  ">
           <div className="w-5 h-5 mr-3" onClick={showSideBar}>
             <img
               src={
@@ -31,6 +31,9 @@ const DashboardLayout = ({ children }) => {
           <h1 className="font-bold text-xl">Dashboard</h1>
         </header>
         {children}
+        {/* <footer className="mt-2 bg-gray-900 text-gray-100 h-10">
+          <h1>Footer</h1>
+        </footer> */}
       </div>
     </div>
   );
